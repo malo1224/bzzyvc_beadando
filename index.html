@@ -1,20 +1,56 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Főoldal menü</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <header>
         <h1>Web programozás-1 Előadás Házi feladat</h1>
     </header>
+
+    <nav>
+        <ul class="navigate-position">
+            <li><a href="#" class="active">Főoldal</a></li>
+            <li><a href="#">Javascript CRUD</a></li>
+            <li><a href="#">Fetch CRUD</a></li>
+            <li><a href="#">Axios CRUD</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <h2>Formula 1 múltja</h2>
-        <p>Az oldal a formula 1 első éveinek eredményit tartalmazza</p>
+        <div class="cards-grid">
+
+            <div class="card">
+                <div class="card-label">01</div>
+                <h3>Javascript CRUD</h3>
+                <p>Formula 1-el kapcsolatos adatok ki listázása, és adatokkal való szerkeszthetőség </p>
+
+            </div>
+
+            <div class="card">
+                <div class="card-label">02</div>
+                <h3>Fetch CRUD</h3>
+                <p>API hívások a Fetch API-val</p>
+
+            </div>
+
+            <div class="card">
+                <div class="card-label">03</div>
+                <h3>Axios CRUD</h3>
+<p>Versenyek eredményeit kezelheted. Hozzáadhatsz új futamot, módosíthatod<br>a helyezéseket és köridőket, illetve törölheted az érvénytelen eredményeket.</p>
+            </div>
+
+        </div>
     </main>
+
     <footer>
-        <p>Péter Dániel | BZZYVC</p>
-    </footer>    
+        <span>Péter Dániel - BZZYVC</span>
+    </footer>
 </body>
+
 </html>

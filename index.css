@@ -1,0 +1,118 @@
+:root {
+    --bg: #0d0d12;
+    --surface: #16161f;
+    --surface2: #1e1e2a;
+    --accent: #7c6cf8;
+    --accent2: #c084fc;
+    --text: #f0eeff;
+    --muted: #8884a8;
+    --border: rgba(124, 108, 248, 0.18);
+}
+
+header {
+    text-align: center;
+    color: var(--text);
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    background-color: var(--surface2);
+
+}
+
+.card {
+    background-color: var(--border);
+    display: grid;
+    width: 30%;
+    border-radius: 10px;
+
+}
+
+.card-label {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    border-color: mediumslateblue;
+    background: purple;
+    transform: translateX(20px);
+
+}
+
+.card h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: var(--text);
+    margin-left: 2%;
+}
+
+
+
+.card p {
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 2;
+    margin-left: 2%;
+}
+
+.navigate-position {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    list-style: none;
+}
+
+.navigate-position li a {
+
+    display: block;
+    padding: 14px 18px;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--muted);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+    white-space: nowrap;
+
+}
+
+.navigate-position li a:hover {
+    color: var(--text);
+    background: var(--muted);
+}
+
+.navigate-position li a.active {
+    color: var(--accent);
+}
+
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    font-size: 20px;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+}
+
+footer span {
+    color: var(--text);
+}
